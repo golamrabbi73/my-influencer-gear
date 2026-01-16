@@ -29,12 +29,21 @@
     display: flex;
 }
 
-
-/* main style */
-header{
-    max-width: 1440px;
+.btn{
+    width: 196px;
+    padding: 10px 24px;
+    border-radius: 41px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: #E02C6D;
+    border: none;
+    justify-content: center;
+    gap: 8px;
 }
 
+
+/* main style */
 #navbar{
     max-width: 1200px;
     /* display: flex; */
@@ -69,12 +78,48 @@ header{
 .menu li i{
     font-size: 1.25rem;
 }
+
+/* hero section  */
+.hero-container{
+    max-width: 1188px;
+    gap: 131px;
+    align-items: center;
+    margin: 50px 132px 69px 120px;
+}
+
+.hero-content h2{
+    font-size: 3.25rem;
+    font-weight: 700;
+}
+.hero-content p{
+    margin: 16px 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.hero-image{
+    position: relative;
+}
+
+.primary-image{
+    z-index: 1;
+    position: relative;
+    left: -40px;
+    top: 30px;
+}
+
+.bg-image{
+    position: absolute;
+    right: 5px;
+    z-index: -1;
+}
+
 /* mobile view */
 @media screen and (max-width: 576px) {
     #navbar{
         width: 93%;
         position: relative;
-        margin: 35px 16px;
+        margin: 35px 16px 0;
     }
 
     .menu li:not(:last-child){
@@ -93,12 +138,47 @@ header{
         left: 0;
         cursor: pointer;
         color: #1B1B1B;
-        width: 24px;
-        height: 24px;
-        padding: 6px 3px;
     }
     #navbar h3{
         margin: 0 auto;
         font-size: 1rem;
     }
+
+    .hero-container{
+        flex-direction: column;
+        margin: 0;
+        margin-top: 22px;
+    }
+
+    .hero-image{
+        width: 90vw;
+    }
+
+    .primary-image{
+        width: 80%;
+        left: 30px;
+        top: 60px;
+    }
+
+    .bg-image{
+        width: 100%;
+        left: -1px;
+    }
+
+    .hero-content{
+        order: 2;
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .hero-content h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+
 }
