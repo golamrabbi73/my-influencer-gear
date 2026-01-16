@@ -121,10 +121,13 @@
 /* marketplaces section */
 .logos{
     max-width: 1110px;
-    margin-top: 69px;
-    margin: 0 auto;
+    margin: 69px auto 100px;
+    padding: 15px;
     justify-content: center;
     align-items: center;
+    gap: 61px;
+    box-shadow: 0 0px 4px -3px rgba(107, 105, 105);
+
 }
 .logos li{
     list-style: none;
@@ -212,6 +215,10 @@
 
     .hero-content p{
         font-size: 1rem;
+    }
+
+    .logos{
+        flex-wrap: wrap;
     }
 
 }
