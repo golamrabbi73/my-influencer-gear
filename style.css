@@ -28,6 +28,10 @@
     display: flex;
 }
 
+.text-gray{
+    color: #D9DBE1;
+}
+
 .btn{
     width: 196px;
     padding: 10px 24px;
@@ -233,6 +237,51 @@
 
 .feautred-info button{
     border-radius: 0;
+}
+
+.footer-container{
+    display: flex;
+    background-color: #0A0826;
+}
+
+.footer-content{
+    margin: 50px auto;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.footer-content p{
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.footer-content span{
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.social-links{
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.social-links li{
+    list-style: none;
+}
+.social-links li a{
+    text-decoration: none;
+}
+
+.social-links li a i{
+    color: white;
 }
 
 /* mobile view */
